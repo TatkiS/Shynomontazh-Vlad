@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Шиномонтаж Влада</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background: #f4f4f4; /* Світлий фон для контрасту */
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+
+        header {
+            background: #003399; /* Темно-синій, як на вагончику */
+            color: #fff;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #006699 3px solid;
+        }
+
+        header a {
+            color: #fff;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 16px;
+        }
+
+        header ul {
+            padding: 0;
+            list-style: none;
+        }
+
+        header li {
+            display: inline;
+            padding: 0 20px 0 20px;
+        }
+
+        header #branding {
+            float: left;
+        }
+
+        header #branding h1 {
+            margin: 0;
+        }
+
+        header nav {
+            float: right;
+            margin-top: 10px;
+        }
+
+        header .highlight, header .current a {
+            color: #e8491d;
+            font-weight: bold;
+        }
+
+        header a:hover {
+            color: #ffffff;
+            font-weight: bold;
+        }
+
+        section {
+            padding: 20px 0;
+            background: #e6e6e6; /* Світло-сірий для розділів */
+        }
+
+        /* Секція контактів */
+        #contact {
+            background: rgb(71, 179, 242); /* Темний фон для контрасту з текстом */
+            color: #ffffff;
+            padding: 50px 0;
+        }
+
+        #contact h3 {
+            text-align: center;
+            color: #fff;
+        }
+
+        #contact form {
+            max-width: 600px;
+            margin: auto;
+            padding: 0 20px;
+        }
+
+        #contact form input[type="text"],
+        #contact form input[type="email"],
+        #contact form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid hsl(204, 90%, 52%);
+        }
+
+        #contact form button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            background: #006699; /* Кнопка у колір вагончика */
+            border: none;
+            color: white;
+            cursor: pointer;
+        }
+
+        #contact form button:hover {
+            background: #005588;
+        }
+
+        /* Стилі для футера */
+        footer {
+            background: hsl(219, 81%, 44%);
+            color: #fff;
+            text-align: center;
+            padding: 30px 0;
+        }
+		        /* Медіа-запити для адаптивності */
+        @media screen and (max-width: 768px) {
+            .container {
+                width: 95%;
+                padding: 0;
+            }
+
+            header h1, header nav ul {
+                text-align: center;
+                float: none;
+            }
+
+            header nav ul {
+                padding-top: 10px;
+            }
+
+            header nav ul li {
+                display: block;
+                padding: 10px;
+            }
+
+            #contact form {
+                width: 90%;
+                padding: 0;
+            }
+
+            #contact form input[type="text"],
+            #contact form input[type="email"],
+            #contact form textarea,
+            #contact form button {
+                width: 100%;
+                box-sizing: border-box; /* Врахування padding у ширину */
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            header {
+                padding-top: 20px;
+                min-height: 50px;
+            }
+
+            header h1 {
+                font-size: 20px;
+            }
+
+            header nav ul li {
+                padding: 8px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <div id="branding">
+            <h1>Шиномонтаж Влада</h1>
+</div>
+<nav>
+<ul>
+<li><a href="#home">Головна</a></li>
+<li><a href="#services">Послуги</a></li>
+<li><a href="#about">Про нас</a></li>
+<li><a href="#contact">Контакти</a></li>
+</ul>
+</nav>
+</div>
+
+</header>
+<section id="home" class="container">
+    <h2>Ласкаво просимо до Шиномонтажу Влада!</h2>
+    <p>Надійний сервіс для професійного догляду за вашими колесами.</p>
+    <!-- Додавання зображень вагончика -->
+    <img src="path_to_image.jpg" alt="Шиномонтаж Влада">
+</section>
+<section id="services" class="container">
+    <h3>Наші послуги</h3>
+    <ul>
+        <li>Ремонт дисків усіх типів до 3.5Т</li>
+        <li>Професійне аргонне зварювання легкосплавних дисків</li>
+        <li>Заправка автомобільних кондиціонерів</li>
+        <li>Швидке та надійне сервісне обслуговування</li>
+    </ul>
+</section>
+<section id="about" class="container">
+    <h3>Про нас</h3>
+    <p>З досвідом роботи на ринку, наші досвідчені фахівці завжди готові надати кваліфіковану допомогу та пораду.</p>
+</section>
+<section id="contact" class="container">
+    <h3>Зв'язатися з нами</h3>
+    <form>
+        <input type="text" placeholder="Ім'я" required>
+        <input type="email" placeholder="Email" required>
+        <input type="text" placeholder="Тема повідомлення" required>
+        <textarea placeholder="Введіть ваше повідомлення тут..." required></textarea>
+        <button type="submit">Відправити</button>
+    </form>
+	    <div class="contact-info">
+        <p><strong>Адреса:</strong> Люблинець, вулиця Ковельська 24, Волинська область, Україна, 45034</p>
+        <p><strong>Години роботи:</strong> ПН-ПТ 09:00-17:00, СБ 09:00-14:00</p>
+        <p><strong>Email:</strong> vlad15270416@gmail.com</p>
+        <p><strong>Телефон:</strong> +380685852987</p>
+        <p><strong>Facebook:</strong> <a href="https://www.facebook.com/profile.php?id=100032782011697">Наша сторінка у Facebook</a></p>
+    </div>
+</section>
+<footer>
+    <p>Шиномонтаж Влада, всі права захищені.</p>
+</footer>
+</body>
+</html>
