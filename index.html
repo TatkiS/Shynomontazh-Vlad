@@ -129,6 +129,12 @@
             text-align: center;
             padding: 30px 0;
         }
+	            /* Стилі для адаптивних зображень */
+        img.responsive {
+            max-width: 100%;
+            height: auto;
+            display: block; /* Забезпечує, що зображення не має додаткового простору знизу */
+        }
 		        /* Медіа-запити для адаптивності */
         @media screen and (max-width: 768px) {
             .container {
@@ -203,7 +209,7 @@
     <h2>Ласкаво просимо до Шиномонтажу Влад!</h2>
     <p>Надійний сервіс для професійного догляду за вашими колесами.</p>
     <!-- Додавання зображень вагончика -->
-    <img src="path_to_image.jpg" alt="Шиномонтаж Влад">
+    <img src="path_to_image.jpg" alt="Шиномонтаж Влад" class="responsive">
 </section>
 <section id="services" class="container">
     <h3>Наші послуги</h3>
